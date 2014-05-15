@@ -1,7 +1,9 @@
 class AddJuices < ActiveRecord::Migration
   def change
-  	t.string :name
-  	t.string :kind
-  	t.text :content
+  	create_table :juices do |t|
+	  	t.string :name
+	  	t.string :kind
+	  	t.text :content
+	end
   end
 end
