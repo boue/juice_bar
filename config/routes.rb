@@ -1,4 +1,5 @@
 Juicebar::Application.routes.draw do
+  root 'users#index'
   resources :users
   resources :juices
   # The priority is based upon order of creation: first created -> highest priority.
